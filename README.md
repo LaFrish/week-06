@@ -7,7 +7,7 @@ You're working on your Tunr app and you encounter this error. What does it mean 
 ![Rails error](http://i.imgur.com/9NR7XNT.png)  
 
 ```text
-Your answer...
+I am missing a view for my Artist controller's index action. I would remedy that by creating an `index.html.erb` inside of the `views/artists` directory.
 ```
 
 ### Question 2
@@ -17,7 +17,7 @@ What is the difference between...
 • Editing an existing migration and running `rake db:migrate:reset`   
 
 ```text
-Your answer...
+Creating a migration to add a column adds a column to an already-existing table in a database. Editing an existing migration and running rake db:migrate:reset wipes the entire database and rebuilds it using existing migrations, including the newly-edited one.
 ```
 
 ### Question 3
@@ -25,7 +25,7 @@ Your answer...
 In a Rails application, how is the router related to controller actions?  
 
 ```text
-Your answer...
+A router will direct a user to a particular controller action depending on the content of the incoming HTTP request.
 ```
 
 ### Question 4
@@ -39,7 +39,7 @@ Assuming our Tunr Rails app (1) has a Song model that belongs to an Artist model
 5. `new_song_path( @song )`  
 
 ```text
-Your answer...
+4. new_artist_song_path( @artist, @song )
 ```
 
 ### Question 5
@@ -52,7 +52,7 @@ Where are (a) cookies and (b) session variables stored? (Select one answer)
 4. (a) Browswer, (b) Server  
 
 ```text
-Your answer...
+4. (a) Browser, (b) Server
 ```
 
 ### Question 6
@@ -67,7 +67,9 @@ The Rails asset pipeline manages which of the following... (Select all answers t
 6. Usernames and passwords  
 
 ```text
-Your answer...
+1. Stylesheets
+2. Javascript files
+4. Images
 ```
 
 ### Question 7
@@ -81,5 +83,5 @@ What is the correct way to run a migration on Heroku?
 5. `heroku db:migrate`  
 
 ```text
-Your answer...
+4. heroku run rake db:migrate
 ```
